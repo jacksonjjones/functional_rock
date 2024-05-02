@@ -4,7 +4,7 @@
 
 .quiz, .scores {
     margin: 100px auto 0 auto;
-    max-width: 450px;
+    max-width: 500px;
 }
 
 p {
@@ -60,4 +60,21 @@ button:hover {
     width: 300px;
     text-align: start;
     margin-left: 0;
+}
+
+.feedback {
+    font-style: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: #fff;
+    border-top: 2px solid grey;
+}
+
+#quiz-end p {
+    margin-left: 0;
+}
+
+#quiz-end button {
+        padding: 5px 15px; 
 }
