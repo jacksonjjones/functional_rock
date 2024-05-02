@@ -2,7 +2,7 @@
 
 var questionsEl = document.querySelector("#questions");
 var timerEl = document.querySelector("#timer");
-var choicesEl = document.querySelector("#options");
+var optionEl = document.querySelector("#options");
 var submitBtn = document.querySelector("#submit-score");
 var startBtn = document.querySelector("#start");
 var nameEl = document.querySelector("#name");
@@ -59,7 +59,7 @@ var timerId;
 function startQuiz() {
   timerId = setInterval(countdown, 1000);
   timerEl.textContent = time;
-  var startPageEl = document.getElemendbyId("start-page");
+  var startPageEl = document.getElementById("start-page");
   startPageEl.setAttribute("class", "hide");
   questionsEl.removeAttribute("class");
   getQuestion();
@@ -73,7 +73,19 @@ function countdown() {
   }
 }
 
-function getQuestion() {}
+function getQuestion() {
+  var currentQuestion = questions[currentQuestionIndex];
+  var promptEl = document.getElementById("question-display");
+  promptEl.textContent = currentQuestion.prompt;
+  optionEl.innerHTML = "";
+  currentQuestion.options.forEach(function (option, i) {
+    var optionBtn = document.createElement("button");
+    optionBtn.setAttribute("value", option);
+    optionBtn.textContent = i + 1 + ". " + option;
+    optionBtn.onClick = QuestionClick;
+    optionEl.appendChild(optionBtn);
+  });
+}
 
 function QuestionClick() {}
 

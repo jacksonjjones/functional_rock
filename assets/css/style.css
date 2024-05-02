@@ -54,3 +54,10 @@ button:hover {
 .hide {
     display: none;
 }
+
+.options button {
+    display: block;
+    width: 300px;
+    text-align: start;
+    margin-left: 0;
+}
