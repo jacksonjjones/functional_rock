@@ -1,0 +1,56 @@
+* {
+    font-family: Helvetica
+}
+
+.quiz, .scores {
+    margin: 100px auto 0 auto;
+    max-width: 450px;
+}
+
+p {
+    margin: 15px 15px;
+}
+
+
+.starting-screen {
+    text-align: center;
+}
+
+.highscores-header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+header a {
+    color: rgb(193, 33, 193);
+}
+
+.timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(123, 24, 123);
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
+
+button:hover {
+    background-color:rgb(104, 25, 104)
+}
+
+.answers button {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
