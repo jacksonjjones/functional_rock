@@ -56,9 +56,22 @@ var currentQuestionIndex = 0;
 var time = questions.length * 15;
 var timerId;
 
-function startQuiz() {}
+function startQuiz() {
+  timerId = setInterval(countdown, 1000);
+  timerEl.textContent = time;
+  var startPageEl = document.getElemendbyId("start-page");
+  startPageEl.setAttribute("class", "hide");
+  questionsEl.removeAttribute("class");
+  getQuestion();
+}
 
-function countdown() {}
+function countdown() {
+  time--;
+  timerEl.textContent = time;
+  if (time <= 0) {
+    quizEnd();
+  }
+}
 
 function getQuestion() {}
 
@@ -67,3 +80,5 @@ function QuestionClick() {}
 function quizEnd() {}
 
 function saveHighscore() {}
+
+startBtn.onclick = startQuiz;
