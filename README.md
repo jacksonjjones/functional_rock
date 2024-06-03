@@ -30,6 +30,8 @@ THEN I can save my initials and score
 
 ## Link to deployed app!
 
+https://jacksonjjones.github.io/functional_rock/
+
 ## Screenshots of generated app!
 
 ![Screenshot of Deployed app](assets/screenshots/home.png)
