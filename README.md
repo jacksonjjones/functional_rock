@@ -32,10 +32,10 @@ THEN I can save my initials and score
 
 ## Screenshots of generated app!
 
-![Screenshot of Deployed app](/screenshots/home.png)
+![Screenshot of Deployed app](assets/screenshots/home.png)
 
-![Screenshot of Deployed app](/screenshots/questions.png)
+![Screenshot of Deployed app](assets/screenshots/questions.png)
 
-![Screenshot of Deployed app](/screenshots/finishedquiz.png)
+![Screenshot of Deployed app](assets/screenshots/finishedquiz.png)
 
-![Screenshot of Deployed app](/screenshots/highscores.png)
+![Screenshot of Deployed app](assets/screenshots/highscores.png)
